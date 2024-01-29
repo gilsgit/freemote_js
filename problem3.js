@@ -1,13 +1,14 @@
-const nums = [-1, 3, 7, 12];
+const nums = [1, -2, 3, 4];
 
 
-var sumOfPositive = function(num) {
-    nums.forEach(num => {
-        if(num > 0){
-            num =  num + num;
+var sumOfPositive = function(nums) {
+    var sum = 0;
+    for (var num of nums) {
+        if (num > 0) {
+            sum += num;
         }
-        console.log(num);
-    });
+    }
+   return sum;
 }
 
-sumOfPositive(nums);
+console.log(sumOfPositive(nums));
