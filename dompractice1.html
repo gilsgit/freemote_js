@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PRACTICE</title>
+    
+</head>
+<div>
+    
+    <h1 style="color: blue;">DOM practice</h1>
+    <div class="container" style="background-color: bisque;">
+    <p>Tis is an object that represents out HTML 1:1!</p>
+    <p>It's where Javascript, HTML and CSS come together</p>
+</div>
+
+</body>
+<script>
+// What is the DOM?  The DOM API
+
+var myHeader = document.getElementsByTagName('h1')[0];
+
+setInterval(function(){
+    if (myHeader.style.color === 'blue'){
+        myHeader.style.color = 'green';
+    } else {
+        myHeader.style.color === 'blue';
+    }
+}, 2000);
+// create elements
+
+var button = document.createElement('button');
+document.body.appendChild(button);
+button.textContent = "click me";
+button.classList.add('my-button');
+button.style.backgroundColor = 'black';
+button.style.color = "white";
+
+var myNewP = document.createElement('p');
+myNewP.textContent = "this is a dynamic paragraph";
+
+var container = document.getElementsByClassName('container')[0];
+container.appendChild(myNewP);
+
+// Select, Create, Read, Update, Delete
+
+
+</script>
+</html>
