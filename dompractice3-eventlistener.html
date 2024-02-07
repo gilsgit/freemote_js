@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PRACTICE</title>
+    
+</head>
+<div>
+    
+    <h1>DOM practice</h1>
+    <div class="container">
+        <p>Tis is an object that represents out HTML 1:1! Cool.</p>
+        <p>It's where Javascript, HTML and CSS come together</p>
+</div>
+    <button>Click me</button>
+
+</body>
+<script>
+
+// event listeners
+
+var button = document.querySelector('button');
+var paragraphs = document.querySelectorAll('p');
+
+button.addEventListener('click', function(){
+    for(let p of paragraphs){
+        p.style.color = 'red';
+    }
+});
+
+//  event reference on mozilla site
+
+
+</script>
+</html>
